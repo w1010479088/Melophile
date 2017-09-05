@@ -4,25 +4,27 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.preference.PreferenceManager;
+import android.text.TextUtils;
+
 import com.google.android.gms.appinvite.AppInviteInvitation;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.reflect.TypeToken;
+import com.vpaliy.data.Config;
 import com.vpaliy.melophile.App;
 import com.vpaliy.melophile.R;
-import com.vpaliy.melophile.di.Config;
 import com.vpaliy.melophile.ui.home.HomeActivity;
 import com.vpaliy.melophile.ui.utils.BundleUtils;
 import com.vpaliy.melophile.ui.utils.Constants;
 import com.vpaliy.soundcloud.auth.SoundCloudAuth;
 import com.vpaliy.soundcloud.model.Token;
-import android.support.v7.preference.PreferenceManager;
-import android.text.TextUtils;
+
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
-import android.support.annotation.Nullable;
-import butterknife.OnClick;
 
 public class AuthActivity extends AppCompatActivity {
 

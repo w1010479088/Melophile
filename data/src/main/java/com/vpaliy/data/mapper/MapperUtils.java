@@ -1,8 +1,6 @@
 package com.vpaliy.data.mapper;
 
 import android.content.Context;
-import android.icu.text.NumberFormat;
-import android.support.annotation.VisibleForTesting;
 import android.text.TextUtils;
 
 import com.vpaliy.data.Config;
@@ -10,12 +8,9 @@ import com.vpaliy.data.R;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import retrofit2.http.Path;
 
 @SuppressWarnings("WeakerAccess")
 public class MapperUtils {
